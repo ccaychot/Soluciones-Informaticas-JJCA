@@ -1,0 +1,18 @@
+<h1>Reserva#index</h1>
+
+<form class='form-horizontal'>
+  <p>
+   <%= label_tag "codigo", "Código de usuario" %>
+   <%= text_field_tag "codigo", "", :size => 5, :maxlenght => 5, :placeholder => "Código", :required => "required" %>
+  </p>
+    <p>
+        <%=label_tag "cboDireccionOrigen", "Origen"%>
+        <%=select_tag("cboDireccionOrigen",options_for_select([['Favorito Origen 1', 1], ['Favorito Origen 2', 2]],2))%>
+    </p>
+    <p>
+        <%=label_tag "cboDireccionDestino", "Destino"%>
+        <%=select_tag("cboDireccionDestino",options_for_select([['Favorito Destino 1', 1], ['Favorito Destino 2', 2]],2))%>
+    </p>
+
+
+</form>
