@@ -1,0 +1,9 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  mensaje: MyText
+  tarea_id: 
+
+two:
+  mensaje: MyText
+  tarea_id: 

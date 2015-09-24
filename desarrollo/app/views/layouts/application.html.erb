@@ -4,6 +4,11 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--css 
+    <link href="style.css" rel="stylesheet" type="text/css">
+    <link href="media-queries.css" rel="stylesheet" type="text/css"> 
+     -->
+
     <title><%= content_for?(:title) ? yield(:title) : "TAXI XPRESS" %></title>
     <%= csrf_meta_tags %>
 
@@ -13,32 +18,42 @@
     <![endif]-->
 
     <%= stylesheet_link_tag "application", :media => "all" %>
-
     <!-- For third-generation iPad with high-resolution Retina display: -->
     <!-- Size should be 144 x 144 pixels -->
     <%= favicon_link_tag 'apple-touch-icon-144x144-precomposed.png', :rel => 'apple-touch-icon-precomposed', :type => 'image/png', :sizes => '144x144' %>
-
     <!-- For iPhone with high-resolution Retina display: -->
     <!-- Size should be 114 x 114 pixels -->
     <%= favicon_link_tag 'apple-touch-icon-114x114-precomposed.png', :rel => 'apple-touch-icon-precomposed', :type => 'image/png', :sizes => '114x114' %>
-
     <!-- For first- and second-generation iPad: -->
     <!-- Size should be 72 x 72 pixels -->
     <%= favicon_link_tag 'apple-touch-icon-72x72-precomposed.png', :rel => 'apple-touch-icon-precomposed', :type => 'image/png', :sizes => '72x72' %>
-
     <!-- For non-Retina iPhone, iPod Touch, and Android 2.1+ devices: -->
     <!-- Size should be 57 x 57 pixels -->
     <%= favicon_link_tag 'apple-touch-icon-precomposed.png', :rel => 'apple-touch-icon-precomposed', :type => 'image/png' %>
-
     <!-- For all other devices -->
     <!-- Size should be 32 x 32 pixels -->
     <%= favicon_link_tag 'favicon.ico', :rel => 'shortcut icon' %>
-
     <%= javascript_include_tag "application" %>
   </head>
-  <body>
+  
+  
+  
+<body>
+  
+<h1> Organizador </h1>
+<!-- Muestra los mensajes redirigidos por otra página si los hay -->
+<% flash.each do |key, value| %>
+   <p> <%= value %> </p>
+<% end %>
+<% flash.each do |key, value| %>
+   <p> <%= value %> </p>
+<% end %>
 
-    <div class="navbar navbar-default navbar-static-top">
+
+
+
+
+      <div class="navbar navbar-default navbar-static-top">
       <div class="container">
         <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-responsive-collapse">
           <span class="icon-bar"></span>
@@ -48,20 +63,22 @@
         <a class="navbar-brand" href="<%=root_path%>">Taxi Xpress</a>
         <div class="navbar-collapse collapse navbar-responsive-collapse">
           <ul class="nav navbar-nav">
-            <li><%= link_to "Reserva", root_path  %></li>
+            <li><%= link_to "Reserva", reserva_index_path  %></li>
             <li><%= link_to "Administración", administracion_index_path  %></li>
             <li><%= link_to "Parámetros", parametros_index_path  %></li>
             <li><%= link_to "CheckList", check_list_index_path %>
-              <ul class="nav navbar-nav">
-                <li><%= link_to "Conductor", "/path2"  %></li>
-                <li><%= link_to "Vehículo", "/path2"  %></li>
-              </ul>
-            </li>
+          <ul class="nav navbar-nav">
+            <li><%= link_to "Conductor", "/path2"  %></li>
+            <li><%= link_to "Vehículo", "/path2"  %></li>
+          </ul>
+          </li>
             <li><%= link_to "Registro", registro_index_path  %>
           </ul>
         </div>
       </div>
     </div>
+
+
 
     <div class="container">
       <div class="row">
@@ -82,11 +99,19 @@
         </div><!--/span-->
       </div><!--/row-->
 
+
+
       <footer>
-        <p>&copy; Company 2015</p>
+        <p>&copy; Consultora Informática JJJC</p>
       </footer>
 
+
     </div> <!-- /container -->
+
+
+
+
+
 
   </body>
 </html>

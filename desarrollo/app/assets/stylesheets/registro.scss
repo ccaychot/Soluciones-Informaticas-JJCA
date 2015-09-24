@@ -1,3 +1,90 @@
 // Place all the styles related to the Registro controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+//http://www.w3schools.com/cssref/css_colors.asp
+
+#form{
+ width: 470px;
+ height: auto;
+ backgroud-image: url(aquí la ruta de la imagen de fondo);
+ margin: 0 auto;
+ padding: 0 1%;
+ box-shadow: 5px 5px 0 #AAA;
+ border-radius: 5px;
+}
+textarea {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+
+	width: 100%;
+
+ 
+}
+
+h2{
+     margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+    color:#000033;
+    
+ 
+}
+
+body{
+ font-family: "Open Sans", Arial, sans-serif;
+ font-size: 14px;
+ font-weight: 350;
+ color: #996600;
+ background:#FFFFFF;
+}
+
+
+input{
+ width: 98%;
+ height: 40px;
+ font: 300 24px "Open Sans", Arial, sans-serif;
+ margin: 5px 0 10px 0;
+ 
+}
+
+input[type=submit]{
+ background-color:#FF9900;
+ height:50px;
+ width:98%;
+ //border:none;
+ font-weight:400;
+ letter-spacing:2px;
+ color:#FFFFFF;
+}
+
+label {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+    color:#996600;
+}
+
+@font-face {
+    font-family: 'leaguegothicregular';
+    font-style: normal;
+    font-weight: normal;
+    src: local('league-gothic.condensed-regular-webfont'),
+        url('fonts/league-gothic.condensed-regular-webfont.woff') format('woff'), 
+        url('fonts/league-gothic.condensed-regular-webfont.eot?') format('embedded-opentype'),
+        url('fonts/league-gothic.condensed-regular-webfont.svg') format('svg'),
+        url('fonts/league-gothic.condensed-regular-webfont.svg#leaguegothicregular') format('svg'),
+        url('fonts/league-gothic.condensed-regular-webfont.ttf') format('truetype');
+    src: url('fonts/league-gothic.condensed-regular-webfont.eot')\9;
+    
+}
+

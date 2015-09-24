@@ -1,0 +1,31 @@
+<h4>POR FAVOR, LLENA TUS DATOS Y HAS TU RESERVA</h4>
+<h2>Pronto recibirás un correo de confirmación. La confirmación de la misma llegará a su correo.</h2>
+</br>
+</br>
+<%= form_for @registro do |f| %> 
+<label></label>
+<%= f.label :descripcion, "NOMBRE Y APELLIDOS:" %>
+<%= f.text_field :name, {:value => @name} %>
+
+<%= f.label :descripcion, "RECÓGEME (calle, distrito)" %>
+<%= f.text_field :homeaddress, {:value => @homeaddress}%>
+
+<%= f.label :descripcion, "LLÉVAME (calle, distrito)" %>
+<%= f.text_field :endaddress,  {:value => @endaddress}%>
+
+<%= f.label :descripcion, "TELÉFONO:" %>
+<%= f.text_field :phone,  {:value => @phone}%>
+
+<%= f.label :descripcion, "EMAIL:" %>
+<%= f.text_field :mail, {:value => @mail}%>
+
+<%= f.label :descripcion, "DÍA:" %>
+<%= f.date_field :transfer_date, {:value => @transfer_date}%>
+
+<%= f.label :descripcion, "HORA:" %>
+<%= f.time_field :hour_transfer, {:value => @hour_transfer}%>
+
+<%= f.label :descripcion, "OBSERVACIÓN:" %>
+<%= f.text_area :observation, {:value => @observation} %>
+<%= f.submit "Enviar" %> <%= link_to "Cancelar", registro_index_path %>
+<% end %>

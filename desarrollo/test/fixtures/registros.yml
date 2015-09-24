@@ -1,0 +1,27 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  name: MyString
+  homeaddress: MyText
+  endaddress: MyString
+  : MyText
+  phone: MyText
+  mail: MyText
+  transfer_date: MyString
+  : 2015-09-24
+  hour_transfer: MyString
+  : 2015-09-24 18:39:57
+  observation: MyText
+
+two:
+  name: MyString
+  homeaddress: MyText
+  endaddress: MyString
+  : MyText
+  phone: MyText
+  mail: MyText
+  transfer_date: MyString
+  : 2015-09-24
+  hour_transfer: MyString
+  : 2015-09-24 18:39:57
+  observation: MyText

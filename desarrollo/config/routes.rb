@@ -1,15 +1,41 @@
 Rails.application.routes.draw do
-  get 'administracion/index'
-
-  root 'reserva#index'
-
+  
+  resources :tareas
+  resources :registros
+  
+  root 'registro#index'
+  get 'registro/edit'
   get 'registro/index'
+  get 'registro/new'
 
-  get 'check_list/index'
+    
 
-  get 'parametros/index'
+  #root 'tareas#new'
+  get 'tareas/index'
+  get 'tareas/new'
+  get 'tareas/create'
+  get 'tareas/show'
+  get 'tareas/edit'
+  get 'tareas/update'
+  get 'tareas/destroy'
+  
 
+  
+# put "tareas/finalizar"
+#  match 'tareas/finalizar/:id' => 'tareas#finalizar'
+  
+ #root :to => 'tareas#index'
+ 
+#http://fernando-gaitan.com.ar/ruby-on-rails-parte-14-crud-y-rest/
+
+
+
+  get 'administracion/index'
   get 'home/index'
+  get 'reserva/index'
+  get 'check_list/index'
+  get 'parametros/index'
+  get 'registro/index'
 
 
   # The priority is based upon order of creation: first created -> highest priority.

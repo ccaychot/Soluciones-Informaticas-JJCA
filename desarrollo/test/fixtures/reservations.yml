@@ -1,0 +1,12 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  name: MyText
+  homeaddress: MyText
+  endaddress: MyText
+  phone: MyText
+  mail: MyText
+  transfer_date: 2015-09-24
+  hour_transfer: 2015-09-24 14:25:56
+  observation: MyText
+

@@ -1,2 +1,15 @@
-<h1>Registro#index</h1>
-<p>Find me in app/views/registro/index.html.erb</p>
+<h4> LISTA DE RESERVAS PENDIENTES DE CONFIRMACIÓN </h4>
+    <p> <%= link_to "Crear nuevo registro", registro_new_path %> </p>
+<ul>
+<% @registros.each do |t| %>
+        <li>
+        <h2> <%= t.transfer_date %> - <%= t.mail %> - <%= t.name %>  -  <%= t.phone %>  <%= link_to "Ver", t.id  %></h2>
+            
+            
+            
+            </br>
+        </li>
+<% end %>
+</ul>
+
+
