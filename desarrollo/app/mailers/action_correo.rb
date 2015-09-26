@@ -1,0 +1,4 @@
+class ActionCorreo < ApplicationMailer
+    
+
+end
